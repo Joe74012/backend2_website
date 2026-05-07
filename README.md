@@ -1,58 +1,88 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Arena of Glory
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+> Een turn-based gladiator vechtspel geïnspireerd op de klassieker *Sword and Sandals 2*
 
-## About Laravel
+Bouw je eigen krijger op, verdien goud in de arena, koop steeds betere wapens en bepantsering, en versla de kampioenen om de ultieme **Champion of the Arena** te worden.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+---
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+# Over het spel
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+In *Arena of Glory* creëer je een gladiator vanaf nul en vecht je je een weg omhoog door de rangen van de arena. Elk gevecht is turn-based: je kiest zorgvuldig je aanvallen, magie en bewegingen, terwijl je let op je stamina, mana en health. Tussen gevechten door verdeel je skill points, koop je nieuwe uitrusting in de winkel, en train je je krijger voor de volgende uitdaging.
 
-## Learning Laravel
+# Features
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+- **Character creator** met aanpasbaar uiterlijk (haar, baard, huidskleur, lichaamsbouw)
+- **6 stats** om te verdelen: Strength, Attack, Defense, Vitality, Agility, Charisma
+- **Turn-based combat** met aanvallen op hoofd, lichaam en benen
+- **Magic system** met spreuken zoals fireball, healing en lightning bolt
+- **Uitgebreide winkel** vol wapens, schilden, helmen en harnassen
+- **15+ tegenstanders** met oplopende moeilijkheidsgraad, eindigend bij de Arena Champion
+- **Taunt-systeem** waarmee je tegenstanders kunt intimideren of aanmoedigen
+- **Save & load** zodat je je carrière kunt voortzetten
 
-In addition, [Laracasts](https://laracasts.com) contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+# Hoe te spelen
 
-You can also watch bite-sized lessons with real-world projects on [Laravel Learn](https://laravel.com/learn), where you will be guided through building a Laravel application from scratch while learning PHP fundamentals.
-
-## Agentic Development
-
-Laravel's predictable structure and conventions make it ideal for AI coding agents like Claude Code, Cursor, and GitHub Copilot. Install [Laravel Boost](https://laravel.com/docs/ai) to supercharge your AI workflow:
+## Installatie
 
 ```bash
-composer require laravel/boost --dev
-
-php artisan boost:install
+git clone https://github.com/jouwgebruikersnaam/arena-of-glory.git
+cd arena-of-glory
+npm install
+npm start
 ```
 
-Boost provides your agent 15+ tools and skills that help agents build Laravel applications while following best practices.
+## Controls
 
-## Contributing
+| Toets | Actie |
+|-------|-------|
+| `1-9` | Selecteer actie uit menu |
+| `A` | Aanvallen |
+| `D` | Verdedigen |
+| `M` | Magie gebruiken |
+| `T` | Tauntende beweging |
+| `Esc` | Pauzemenu |
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+# Combat-systeem
 
-## Code of Conduct
+Elke beurt kies je één van de volgende acties:
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+1. **Attack** — Kies tussen een snelle, normale of zware aanval, gericht op hoofd / lichaam / benen
+2. **Defend** — Verhoog tijdelijk je defense en herstel een beetje stamina
+3. **Cast Spell** — Gebruik mana voor offensieve of ondersteunende magie
+4. **Use Item** — Drink een potion of gebruik een scroll
+5. **Taunt** — Probeer je tegenstander uit balans te brengen voor een bonus
 
-## Security Vulnerabilities
+Stamina bepaalt hoe vaak je kunt aanvallen, mana hoeveel spreuken je kunt casten, en health... tja, health spreekt voor zich.
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+# Progressie
 
-## License
+Na elke overwinning verdien je **goud** en **experience points**. Bij een level-up krijg je skill points die je kunt verdelen over je stats. Investeer in:
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+- **Strength** voor meer schade per slag
+- **Agility** om vaker te ontwijken
+- **Vitality** voor meer health
+- **Charisma** voor betere prijzen in de winkel en sterkere taunts
+
+# Tech stack
+
+- JavaScript (vanilla) of React, afhankelijk van je voorkeur
+- HTML5 Canvas voor de arena-rendering
+- LocalStorage voor save games
+- Web Audio API voor sound effects
+
+# Roadmap
+
+- [ ] Multiplayer-modus (PvP via WebSockets)
+- [ ] Meer arena's met verschillende thema's (woestijn, ijsvlakte, vulkaan)
+- [ ] Meer uitrustingsslots (ringen, amuletten)
+- [ ] Achievements en leaderboards
+- [ ] Mobile support
+
+# Licentie
+
+MIT License — voel je vrij om dit project te forken en je eigen arena te bouwen.
+
+---
+
+*"Are you not entertained?!"* — Maximus
