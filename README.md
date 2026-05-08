@@ -19,11 +19,3 @@ Klik op de knop steen, papier of schaar. De computer maakt een random keuze en d
 2. Schaar verslaat papier
 3. Papier verslaat steen
 4. Gelijke keuze = gelijkspel (niemand krijgt een punt)
-
-## Tech stack
-
-- HTML, CSS, JavaScript (vanilla)
-
-## Licentie
-
-MIT License
