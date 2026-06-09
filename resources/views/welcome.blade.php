@@ -17,9 +17,9 @@
             </style>
         @endif
     </head>
-    <body class="bg-[#FDFDFC] dark:bg-[#0a0a0a] text-[#1b1b18] flex p-6 lg:p-8 items-center lg:justify-center min-h-screen flex-col">
-    <header class="flex justify-between items-center w-full px-8 py-4 bg-white shadow-md sticky top-0 z-50">
-        <h2 class="text-xl font-bold">PizzaHub</h2>
+    <body class="bg-[#FDFDFC] dark:bg-[#0a0a0a] text-[#1b1b18] flex items-center lg:justify-center min-h-screen flex-col">
+    <header class="flex justify-between items-center w-full p-6 bg-white shadow-md sticky top-0 z-50">
+        <h2 class="text-xl font-bold">Steen, papier, schaar</h2>
         <a href="/" class="font-semibold">Home</a>
         <a href="/game" class="font-semibold">Game</a>
 
