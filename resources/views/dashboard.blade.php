@@ -17,7 +17,7 @@
         </div>
         <div class=" w-full mx-auto sm:px-6 lg:px-8">
             <div class="bg-yellow-400 overflow-hidden shadow-sm sm:rounded-lg">
-                <a href="game/maken">
+                <a href="game/make">
                     <button class="p-6 text-gray-900 font-bold">
                         Game maken
                     </button>
