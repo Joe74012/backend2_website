@@ -19,10 +19,12 @@
     </head>
     <body class="bg-[#FDFDFC] dark:bg-[#0a0a0a] text-[#1b1b18] flex items-center lg:justify-center min-h-screen flex-col">
     <header class="flex justify-between items-center w-full p-6 bg-white shadow-md sticky top-0 z-50">
-        <h2 class="text-xl font-bold">Steen, papier, schaar</h2>
-        <div class="flex gap-5">
-            <a href="/" class="font-semibold">Home</a>
-            <a href="/game" class="font-semibold">Game</a>
+        <div class="flex gap-5 items-center">
+            <a href="/">
+                <h2 class="text-xl font-semibold ">SPS</h2>
+            </a>
+            <a href="/game/games" class="font-semibold">Games</a>
+            <a href="/game/make" class="font-semibold">Game maken</a>
         </div>
 
         <div class="flex items-center gap-3">
@@ -34,13 +36,13 @@
                     </a>
                 @else
                     <a href="{{ route('login') }}"
-                       class="inline-block px-5 py-1.5 text-sm hover:text-orange-600 transition-colors">
+                       class="inline-block px-5 py-1.5 font-semibold text-sm hover:text-orange-600 transition-colors">
                         Log in
                     </a>
                     @if (Route::has('register'))
                         <a
                             href="{{ route('register') }}"
-                            class="inline-block px-5 py-1.5 dark:text-[#EDEDEC] border-[#19140035] hover:border-[#1915014a] border text-[#1b1b18] dark:border-[#3E3E3A] dark:hover:border-[#62605b] rounded-sm text-sm leading-normal">
+                            class="inline-block px-5 py-1.5 font-semibold bg-yellow-400 border  border-[#19140035] rounded-sm text-sm">
                             Register
                         </a>
                     @endif
