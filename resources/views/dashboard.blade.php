@@ -5,19 +5,23 @@
         </h2>
     </x-slot>
 
-    <div class="py-12">
-        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
-                <div class="p-6 text-gray-900 dark:text-gray-100">
-                    {{ __("You're logged in!") }}
-                </div>
+    <div class="py-12 flex flex-col gap-6">
+        <div class="w-full mx-auto sm:px-6 lg:px-8">
+            <div class=" bg-yellow-400 overflow-hidden shadow-sm sm:rounded-lg">
+                <a href="game/games">
+                    <button class="p-6 text-gray-900 font-bold">
+                        Games inzien
+                    </button>
+                </a>
             </div>
         </div>
-        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
-                <button class="p-6 text-gray-900 dark:text-gray-100">
-                    Start een spel
-                </button>
+        <div class=" w-full mx-auto sm:px-6 lg:px-8">
+            <div class="bg-yellow-400 overflow-hidden shadow-sm sm:rounded-lg">
+                <a href="game/maken">
+                    <button class="p-6 text-gray-900 font-bold">
+                        Game maken
+                    </button>
+                </a>
             </div>
         </div>
     </div>
